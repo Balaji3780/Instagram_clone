@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram{% block title %}{% endblock title %}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "styles/public/styles.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "styles/public/secondary.css" %}">
+    <link rel="icon" href="{% static "images/web-icon.png" %}">
+</head>
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://cdn.dribbble.com/userupload/10140060/file/still-72db04ba28713faec278b6494a5359fc.gif?resize=400x0'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+  }
+
+  .wrapper-navbar {
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #405DE6;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo-nav {
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+  }
+</style>
+<body>
+    {% block auth_container %}
+    {% endblock auth_container %}
+</body>
+</html>
